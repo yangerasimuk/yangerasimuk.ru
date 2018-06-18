@@ -29,11 +29,15 @@ permalink: /:categories/:year-:month-:day-:title:output_ext
 # Build settings
 markdown: kramdown
 #theme: minima
-gems:
+plagins:
   - jekyll-feed
   - bootstrap
+  - autoprefixer
+   
 exclude:
   - Gemfile
   - Gemfile.lock
 sass:
     sass_dir: _sass
+#bootstrap:
+ # assets: true
