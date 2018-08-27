@@ -23,7 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: http://yangerasimuk.ru # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-
+yandex_verification: d8be58cfab9dd6e8 
 permalink: /:categories/:year-:month-:day-:title:output_ext
 
 # Build settings
