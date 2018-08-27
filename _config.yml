@@ -32,7 +32,6 @@ markdown: kramdown
 plagins:
   - jekyll-feed
   - jekyll-sitemap
-  - bootstrap
   - autoprefixer
    
 #exclude:
