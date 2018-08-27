@@ -30,6 +30,7 @@ permalink: /:categories/:year-:month-:day-:title:output_ext
 markdown: kramdown
 #theme: minima
 plagins:
+  - github-pages
   - jekyll-feed
   - jekyll-sitemap
   - autoprefixer
