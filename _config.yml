@@ -29,8 +29,7 @@ permalink: /:categories/:year-:month-:day-:title:output_ext
 # Build settings
 markdown: kramdown
 #theme: minima
-plagins:
-  - github-pages
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - autoprefixer
