@@ -31,6 +31,7 @@ markdown: kramdown
 #theme: minima
 plagins:
   - jekyll-feed
+  - jekyll-sitemap
   - bootstrap
   - autoprefixer
    
