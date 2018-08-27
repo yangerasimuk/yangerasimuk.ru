@@ -35,9 +35,9 @@ plagins:
   - bootstrap
   - autoprefixer
    
-exclude:
-  - Gemfile
-  - Gemfile.lock
+#exclude:
+#  - Gemfile
+#  - Gemfile.lock
 sass:
     sass_dir: _sass
 #bootstrap:
