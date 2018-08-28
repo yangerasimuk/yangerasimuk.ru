@@ -13,12 +13,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - autoprefixer
-exclude: [vendor]
-#  - [vendor]
-#  - Gemfile
-#  - Gemfile.lock
-#  - README.md
-#  - LICENCE.txt
+exclude: 
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
 sass:
     sass_dir: _sass
 paginate: 10
