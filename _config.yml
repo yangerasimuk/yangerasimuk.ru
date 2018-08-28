@@ -14,6 +14,7 @@ plugins:
   - jekyll-paginate
   - autoprefixer
 exclude:
+  - [vendor]
   - Gemfile
   - Gemfile.lock
   - README.md
