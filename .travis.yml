@@ -19,7 +19,8 @@ cache: bundler # caching bundler gem packages will speed up build
 
 befor_deploy:
   - chmod +x ./scripts/cimerge.sh
-deploy: ./scripts/cimerge.sh
+deploy: 
+  - ./scripts/cimerge.sh
 
 # - git config --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
 # - git checkout dev
