@@ -9,7 +9,6 @@ script: ./script/cibuild
 # branch whitelist, only for GitHub Pages
 branches:
   only:
-  - master
   - gh-pages     # test the gh-pages branch
 env:
   global:
@@ -17,5 +16,14 @@ env:
 sudo: false # route your build to the container-based infrastructure for a faster build
 cache: bundler # caching bundler gem packages will speed up build
 # Optional: disable email notifications about the outcome of your builds
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
+
 notifications:
   email: yan.gerasimuk@yandex.ru
