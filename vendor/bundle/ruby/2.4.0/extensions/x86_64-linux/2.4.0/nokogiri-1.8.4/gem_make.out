@@ -1,5 +1,5 @@
 current directory: /home/travis/build/yangerasimuk/yangerasimuk.ru/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.4/ext/nokogiri
-/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20180828-2859-aaeycu.rb extconf.rb
+/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20180829-2053-mxc1hf.rb extconf.rb
 checking if the C compiler accepts ... yes
 Building nokogiri using system libraries.
 WARNING: libxml2 version 2.9.3 or later is highly recommended, but proceeding anyway.
@@ -109,4 +109,4 @@ rm -rf /home/travis/build/yangerasimuk/yangerasimuk.ru/vendor/bundle/ruby/2.4.0/
 
 current directory: /home/travis/build/yangerasimuk/yangerasimuk.ru/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.4/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -m 0755 nokogiri.so ./.gem.20180828-2859-rn00iw/nokogiri
+/usr/bin/install -m 0755 nokogiri.so ./.gem.20180829-2053-1qh1str/nokogiri
