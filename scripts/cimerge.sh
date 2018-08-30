@@ -5,10 +5,10 @@ set -e # halt script on error
 git remote update
 git fetch
 
-git checkout --track origin/dev
+#git checkout --track origin/dev
 git checkout dev
 
-git checkout --track origin/master
+#git checkout --track origin/master
 git checkout master
 
 git merge dev
