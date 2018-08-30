@@ -2,15 +2,15 @@
 
 set -e # halt script on error
 
-git checkout --track origin/master
-git checkout master
+git remote update
+git fetch
 
 git checkout --track origin/dev
 git checkout dev
 
-git fetch --all
-
+git checkout --track origin/master
 git checkout master
+
 git merge dev
 
 
