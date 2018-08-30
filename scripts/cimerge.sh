@@ -3,7 +3,10 @@
 set -e # halt script on error
 
 git checkout --track origin/master
+git checkout master
+
 git checkout --track origin/dev
+git checkout dev
 
 git fetch --all
 
