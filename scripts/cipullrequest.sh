@@ -13,6 +13,9 @@ export GIT_COMMITTER_NAME="Ян Герасимук via Travis"
 
 git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
 git fetch --all || exit
+
+git stash
+
 git checkout master || exit
 git merge --no-ff "$TRAVIS_COMMIT" || exit
 git push @github.com/">https://${GITHUB_TOKEN}@github.com/yangerasimuk/yangerasimuk.ru.git
