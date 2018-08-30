@@ -18,8 +18,11 @@ cache: false #bundler # caching bundler gem packages will speed up build
 # Optional: disable email notifications about the outcome of your builds
 
 after_success:
-  - chmod +x ./scripts/cimerge.sh
-  - ./scripts/cimerge.sh
+  - chmod +x ./scripts/cipullrequest.sh
+  - ./scripts/cipullrequest.sh
+  
+  #- chmod +x ./scripts/cimerge.sh
+  #- ./scripts/cimerge.sh
 
 # - git config --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
 # - git checkout dev

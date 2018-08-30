@@ -6,11 +6,11 @@ git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 git remote update
 git fetch
 
-#git checkout --track origin/dev
 git checkout dev
+git pull
 
-#git checkout --track origin/master
 git checkout master
+git pull
 
 git merge dev
 
