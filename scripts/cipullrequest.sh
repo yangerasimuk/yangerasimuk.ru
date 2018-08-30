@@ -18,6 +18,6 @@ git stash
 
 git checkout master || exit
 git merge --no-ff "$TRAVIS_COMMIT" || exit
-git push @github.com/">https://${GITHUB_TOKEN}@github.com/yangerasimuk/yangerasimuk.ru.git
+git push @github.com/">https://${GITHUB_TOKEN}@github.com/yangerasimuk/yangerasimuk.ru.git"
 
 git stash pop
