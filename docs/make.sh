@@ -16,7 +16,7 @@ echo "> git commit -m 'Rebuild site'"
 git commit -m "Rebuild site"
 
 echo "> git push origin"
-git push origin
+git push --force origin
 
 echo "git checkout master"
 git checkout master
