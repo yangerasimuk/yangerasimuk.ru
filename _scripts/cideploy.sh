@@ -22,23 +22,29 @@ export GIT_COMMITTER_NAME="Ян Герасимук via Travis"
 #git branch | grep \* | cut -d ' ' -f2
 #git pull origin
 
-echo 'git remote set-branches --add origin master'
+echo '> git remote set-branches --add origin master'
 git remote set-branches --add origin master
 
-echo 'git fetch'
+echo '> git fetch'
 git fetch
 
-echo 'git reset --hard'
+echo '> git reset --hard'
 git reset --hard
 
-echo 'git checkout master'
+echo '> git checkout master'
 git checkout -f master
 
-echo 'stash'
+echo '> stash'
 git stash
 
-echo 'git merge --ff-only "$TRAVIS_COMMIT"'
-git merge --ff-only "$TRAVIS_COMMIT"
+echo "> TRAVIS_COMMIT = $TRAVIS_COMMIT"
+echo "> TRAVIS_BRANCH = $TRAVIS_BRANCH"
+
+#echo '> git merge --ff-only "$TRAVIS_COMMIT"'
+#git merge --ff-only "$TRAVIS_COMMIT"
+
+echo '> git merge "$TRAVIS_COMMIT"'
+git merge "$TRAVIS_COMMIT"
 
 #git stash
 #git checkout master || exit
