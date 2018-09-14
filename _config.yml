@@ -13,6 +13,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 exclude: 
+  - docs
   - .bundle
   - vendor
   - Gemfile
