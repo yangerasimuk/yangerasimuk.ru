@@ -23,6 +23,7 @@ exclude:
   
 sass:
     sass_dir: _sass
+    style: compressed
 paginate: 10
 paginate_path: page/:num"
 destination: docs
