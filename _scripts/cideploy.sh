@@ -31,14 +31,15 @@ git fetch
 echo '> git reset --hard'
 git reset --hard
 
+echo '> git checkout -f master'
+git checkout -f master
+
 echo '> git checkout -f dev'
 git checkout -f dev
 
 echo '> git merge -s ours master'
 git merge -s ours master
 
-echo '> git checkout -f master'
-git checkout -f master
 
 echo '> stash'
 git stash
