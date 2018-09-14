@@ -7,7 +7,7 @@ if [ "$TRAVIS_BRANCH" != "dev" ]; then
     exit 0;
 fi
 
-ls -la
+ls -la --group-directories-first
 
 # install bootstrap
 #gem install bootstrap -v 4.1.3
@@ -16,10 +16,11 @@ export GIT_COMMITTER_EMAIL="yan.gerasimuk@yandex.ru"
 export GIT_COMMITTER_NAME="Ян Герасимук via Travis"
 
 git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
-git fetch --all || exit
+#git fetch --all || exit
 
-git branch | grep \* | cut -d ' ' -f2
 git checkout dev
+git branch | grep \* | cut -d ' ' -f2
+git pull origin
 
 #git stash
 
