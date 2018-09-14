@@ -22,17 +22,30 @@ export GIT_COMMITTER_NAME="Ян Герасимук via Travis"
 #git branch | grep \* | cut -d ' ' -f2
 #git pull origin
 
+echo 'git remote set-branches --add origin master'
 git remote set-branches --add origin master
+
+echo 'git fetch'
 git fetch
+
+echo 'git reset --hard'
 git reset --hard
+
+echo 'git checkout master'
 git checkout master
+
+echo 'stash'
 git stash
+
+echo 'git merge --ff-only "$TRAVIS_COMMIT"'
 git merge --ff-only "$TRAVIS_COMMIT"
 
 #git stash
 #git checkout master || exit
 #git merge "$TRAVIS_COMMIT" || exit
+echo 'git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"'
 git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"
+echo 'git stash pop'
 git stash pop
 #git pull origin
 
