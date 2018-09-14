@@ -13,13 +13,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 exclude:
-  - docs
-  - vendor
   - make.sh
   - Gemfile
   - Gemfile.lock
   - README.md 
-  - .bundle
+  - .DS_Store
   - .nojekyll
   - .gitignore
   
