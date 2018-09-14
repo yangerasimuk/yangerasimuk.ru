@@ -13,6 +13,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 exclude: 
+  - docs
   - .bundle
   - vendor
   - Gemfile
@@ -20,9 +21,10 @@ exclude:
   - README.md
 sass:
     sass_dir: _sass
+    style: compressed
 paginate: 10
 paginate_path: page/:num"
-
+destination: docs
 # Integration
 yandex_verification: d8be58cfab9dd6e8 
 
