@@ -26,13 +26,14 @@ git remote set-branches --add origin master
 git fetch
 git reset --hard
 git checkout master
+git stash
 git merge --ff-only "$TRAVIS_COMMIT"
 
 #git stash
 #git checkout master || exit
 #git merge "$TRAVIS_COMMIT" || exit
 git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"
-
+git stash pop
 #git pull origin
 
 #git checkout dev
