@@ -12,8 +12,8 @@ fi
 echo "> bundle exec jekyll build"
 bundle exec jekyll build
 
-#echo "> bundle exec htmlproofer ./docs"
-#bundle exec htmlproofer ./docs
+echo "> bundle exec htmlproofer ./docs"
+bundle exec htmlproofer ./docs
 
 echo "> git add ."
 git add .
