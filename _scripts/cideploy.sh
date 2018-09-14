@@ -31,7 +31,13 @@ git fetch
 echo '> git reset --hard'
 git reset --hard
 
-echo '> git checkout master'
+echo '> git checkout -f dev'
+git checkout -f dev
+
+echo '> git merge -s ours master'
+git merge -s ours master
+
+echo '> git checkout -f master'
 git checkout -f master
 
 echo '> stash'
@@ -44,13 +50,14 @@ echo "> TRAVIS_BRANCH = $TRAVIS_BRANCH"
 #git merge --ff-only "$TRAVIS_COMMIT"
 
 echo '> git merge "$TRAVIS_COMMIT"'
-git merge "$TRAVIS_COMMIT"
+git merge dev
 
 #git stash
 #git checkout master || exit
 #git merge "$TRAVIS_COMMIT" || exit
 echo 'git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"'
 git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"
+
 echo 'git stash pop'
 git stash pop
 #git pull origin
