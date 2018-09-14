@@ -23,6 +23,10 @@ git branch | grep \* | cut -d ' ' -f2
 git pull origin
 
 #git stash
+git checkout master
+git pull origin
+
+git checkout dev
 
 git merge -s ours master
 git checkout master
