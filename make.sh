@@ -18,9 +18,17 @@ bundle exec jekyll build
 echo "> git add ."
 git add .
 
+echo "> Enter message to commit (empty for default):"
+read message
+
+if [ $message = "" ]
+then
 date=$(date +%Y-%m-%d)
-echo "> git commit -m 'Rebuild site at $date'"
-git commit -m "Build site at $date"
+$message = "Rebuild site at $date"
+fi
+
+echo "> git commit -m $message"
+git commit -m "$message"
 
 echo "> git push origin"
 git push --force origin
