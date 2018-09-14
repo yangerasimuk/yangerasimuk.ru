@@ -14,8 +14,9 @@ export GIT_COMMITTER_EMAIL="yan.gerasimuk@yandex.ru"
 export GIT_COMMITTER_NAME="Ян Герасимук via Travis"
 
 git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
-#git fetch --all || exit
+git fetch --all || exit
 
+git branch | grep \* | cut -d ' ' -f2
 #git stash
 
 #git checkout master || exit
