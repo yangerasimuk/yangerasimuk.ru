@@ -2,13 +2,16 @@
 layout: default
 ---
 
-<ul class="post-list">
-{% for post in site.posts %}
-	<li>
-	{% assign date_format = site.minima.date_format | default: "%d.%m.%Y" %}
-		<span class="post-meta">{{ post.date | date: date_format }}</span>
-		<span style="margin-right:1em;"></span>
-		<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-	</li>
-{% endfor %}
-</ul>
+<div class="container-fluid">
+	<div class="row justify-content-start">
+		<div class="col">
+			<div class="d-flex flex-wrap">
+				{% for post in site.posts %}
+					<div class="p-2">
+						<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

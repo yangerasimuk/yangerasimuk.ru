@@ -1,3 +1,94 @@
+/* Typography */
+.html {
+	font-size: $base-font-size;
+}
+
+@include media-breakpoint-down(xs) {
+	.html {
+		font-size: $base-font-size;
+	}
+	.home-link {
+		font-size: $base-font-size * 1.1;
+	}
+	.post-link {
+		font-size: $base-font-size * 1.1;
+	}
+	h1 {
+		font-size: $base-font-size * 1.5;
+	}
+}
+@include media-breakpoint-up(xs) {
+	.html {
+		font-size: $base-font-size;
+	}
+	.home-link {
+		font-size: $base-font-size * 1.1;
+	}
+	.post-link {
+		font-size: $base-font-size * 1.1;
+	}
+	h1 {
+		font-size: $base-font-size * 1.5;
+	}
+}
+@include media-breakpoint-up(sm) {
+	.html {
+		font-size: $base-font-size * 1.1;
+	}
+	.home-link {
+		font-size: $base-font-size * 1.1;
+	}
+	.post-link {
+		font-size: $base-font-size * 1.2;
+	}
+	h1 {
+		font-size: $base-font-size * 1.6;
+	}
+}
+@include media-breakpoint-up(md) {
+	.html {
+		font-size: $base-font-size * 1.2;
+	}
+	.home-link {
+		font-size: $base-font-size * 1.1;
+	}
+	.post-link {
+		font-size: $base-font-size * 1.3;
+	}
+	h1 {
+		font-size: $base-font-size * 1.8;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.html {
+		font-size: $base-font-size * 1.3;
+	}
+	.home-link {
+		font-size: $base-font-size * 1.1;
+	}
+	.post-link {
+		font-size: $base-font-size * 1.5;
+	}
+	h1 {
+		font-size: $base-font-size * 2;
+	}
+}
+@include media-breakpoint-up(xl) {
+	.html {
+		font-size: $base-font-size * 1.4;
+	}
+	.home-link {
+		font-size: $base-font-size * 1.1;
+	}
+	.post-link {
+		font-size: $base-font-size * 1.7;
+	}
+	h1 {
+		font-size: $base-font-size * 1.7;
+	}
+}
+
+
 /**
  * Site header
  */
@@ -6,9 +97,7 @@
   border-bottom: 1px solid $grey-color-light;
 }
 
-.home-link {
-	font-size: $base-font-size * 1.2;
-}
+
 
 
 /**
@@ -17,6 +106,20 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+}
+
+.post-list-wave {
+	  display: flex;
+	  flex-wrap: wrap;
+	  list-style-type: none;
+	  padding-left: 0;
+/*
+	list-style: none;
+		margin-left: 0;
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: row;
+*/		
 }
 
 .info-list {
@@ -58,10 +161,11 @@
   color: $grey-color;
 }
 
+/*
 .post-link {
   @include relative-font-size(1.5);
 }
-
+*/
 
 /**
  * Posts
@@ -71,7 +175,8 @@
 }
 
 .post-title {
-  @include relative-font-size(2.625);
+	text-align: center;
+  /*@include relative-font-size(2.625);*/
   letter-spacing: -1px;
   line-height: 1;
 }
