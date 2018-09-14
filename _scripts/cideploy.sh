@@ -30,23 +30,23 @@ export GIT_COMMITTER_NAME="Ян Герасимук via Travis"
 #git branch | grep \* | cut -d ' ' -f2
 #git pull origin
 
-echo '> git remote set-branches --add origin master'
-git remote set-branches --add origin master
+#echo '> git remote set-branches --add origin master'
+#git remote set-branches --add origin master
 
-echo '> git fetch'
-git fetch
+#echo '> git fetch'
+#git fetch
 
-echo '> git reset --hard'
-git reset --hard
+#echo '> git reset --hard'
+#git reset --hard
 
-echo '> git checkout -f master'
-git checkout -f master
+#echo '> git checkout -f master'
+#git checkout -f master
 
-echo '> git checkout -f dev'
-git checkout -f dev
+#echo '> git checkout -f dev'
+#git checkout -f dev
 
-echo '> git merge -s ours master'
-git merge -s ours master
+#echo '> git merge -s ours master'
+#git merge -s ours master
 
 
 #echo '> stash'
@@ -58,14 +58,14 @@ echo "> TRAVIS_BRANCH = $TRAVIS_BRANCH"
 #echo '> git merge --ff-only "$TRAVIS_COMMIT"'
 #git merge --ff-only "$TRAVIS_COMMIT"
 
-echo '> git merge dev'
-git merge dev
+#echo '> git merge dev'
+#git merge dev
 
 #git stash
 #git checkout master || exit
 #git merge "$TRAVIS_COMMIT" || exit
-echo 'git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git" master'
-git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git master"
+echo 'git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"'
+git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"
 
 #echo 'git stash pop'
 #git stash pop
