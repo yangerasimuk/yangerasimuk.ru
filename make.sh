@@ -2,6 +2,13 @@
 
 set -e # halt script on error
 
+branch=$(git branch -a | grep \* | cut -d ' ' -f2)
+if [ branch != "dev" ]
+then
+echo "Current git branch is not dev"
+exit
+fi
+
 echo "> bundle exec jekyll build"
 bundle exec jekyll build
 
@@ -12,15 +19,15 @@ echo "> bundle exec htmlproofer ./docs"
 echo "> git add ."
 git add .
 
-DATE=`date +%Y-%m-%d`
-echo "> git commit -m 'Rebuild site at "+DATE+"'"
-git commit -m "Build site at "+DATE
+date=$(date +%Y-%m-%d)
+echo "> git commit -m 'Rebuild site at "+$date+"'"
+git commit -m "Build site at "+$date
 
 echo "> git push origin"
 git push --force origin
 
-echo "git checkout master"
-git checkout master
+echo "> git merge -s ours dev"
+git merge -s ours master
 
 echo "> git merge dev"
 git merge dev
