@@ -24,9 +24,12 @@ git pull origin
 
 #git stash
 
-git checkout master || exit
+git merge -s ours master
+git checkout master
+git stash
 #git merge --no-ff "$TRAVIS_COMMIT" || exit
 git merge dev
 git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"
+git stash pop
 
 #git stash pop
