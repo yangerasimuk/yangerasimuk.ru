@@ -32,7 +32,7 @@ echo 'git reset --hard'
 git reset --hard
 
 echo 'git checkout master'
-git checkout master
+git checkout -f master
 
 echo 'stash'
 git stash
