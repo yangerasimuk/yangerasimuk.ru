@@ -15,11 +15,11 @@ plugins:
 exclude:
   - docs
   - vendor
+  - make.sh
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - .make.sh 
+  - README.md 
   - .bundle
   - .nojekyll
   - .gitignore
