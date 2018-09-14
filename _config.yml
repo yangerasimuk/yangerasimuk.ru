@@ -12,13 +12,18 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
-exclude: 
+exclude:
   - docs
-  - .bundle
   - vendor
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - README.md
+  - .make.sh 
+  - .bundle
+  - .nojekyll
+  - .gitignore
+  
 sass:
     sass_dir: _sass
     style: compressed
