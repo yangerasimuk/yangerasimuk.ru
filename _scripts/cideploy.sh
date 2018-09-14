@@ -7,6 +7,14 @@ if [ "$TRAVIS_BRANCH" != "dev" ]; then
     exit 0;
 fi
 
+echo '> git status'
+git status
+echo '> git add .'
+git add .
+echo '> git commit -m "Add rebuilded /docs"'
+git commit -m "Add rebuilded /docs"
+
+
 #ls -la --group-directories-first
 
 # install bootstrap
@@ -41,8 +49,8 @@ echo '> git merge -s ours master'
 git merge -s ours master
 
 
-echo '> stash'
-git stash
+#echo '> stash'
+#git stash
 
 echo "> TRAVIS_COMMIT = $TRAVIS_COMMIT"
 echo "> TRAVIS_BRANCH = $TRAVIS_BRANCH"
@@ -50,17 +58,17 @@ echo "> TRAVIS_BRANCH = $TRAVIS_BRANCH"
 #echo '> git merge --ff-only "$TRAVIS_COMMIT"'
 #git merge --ff-only "$TRAVIS_COMMIT"
 
-echo '> git merge "$TRAVIS_COMMIT"'
+echo '> git merge dev'
 git merge dev
 
 #git stash
 #git checkout master || exit
 #git merge "$TRAVIS_COMMIT" || exit
-echo 'git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"'
-git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git"
+echo 'git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git" master'
+git push "https://$GITHUB_TOKEN@github.com/yangerasimuk/yangerasimuk.ru.git master"
 
-echo 'git stash pop'
-git stash pop
+#echo 'git stash pop'
+#git stash pop
 #git pull origin
 
 #git checkout dev
