@@ -12,8 +12,9 @@ echo "> bundle exec htmlproofer ./docs"
 echo "> git add ."
 git add .
 
-echo "> git commit -m 'Rebuild site'"
-git commit -m "Rebuild site"
+DATE=`date +%Y-%m-%d`
+echo "> git commit -m 'Rebuild site at "+DATE+"'"
+git commit -m "Build site at "+DATE
 
 echo "> git push origin"
 git push --force origin
@@ -27,3 +28,5 @@ git merge dev
 echo "> git push origin"
 git push origin
 
+echo "> git checkout dev"
+git checkout dev
