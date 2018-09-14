@@ -8,7 +8,7 @@ if [ "$TRAVIS_BRANCH" != "dev" ]; then
 fi
 
 # install bootstrap
-gem install bootstrap -v 4.1.3
+#gem install bootstrap -v 4.1.3
 
 export GIT_COMMITTER_EMAIL="yan.gerasimuk@yandex.ru"
 export GIT_COMMITTER_NAME="Ян Герасимук via Travis"
