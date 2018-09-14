@@ -7,6 +7,8 @@ if [ "$TRAVIS_BRANCH" != "dev" ]; then
     exit 0;
 fi
 
+ls -la
+
 # install bootstrap
 #gem install bootstrap -v 4.1.3
 
@@ -17,6 +19,8 @@ git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
 git fetch --all || exit
 
 git branch | grep \* | cut -d ' ' -f2
+git checkout dev
+
 #git stash
 
 #git checkout master || exit
