@@ -3,7 +3,7 @@
 set -e # halt script on error
 
 branch=$(git branch -a | grep \* | cut -d ' ' -f2)
-if [ branch != "dev" ]
+if [ $branch != "dev" ]
 then
 echo "Current git branch is not dev"
 exit
