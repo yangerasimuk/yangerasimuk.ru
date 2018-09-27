@@ -21,7 +21,7 @@ git add .
 echo "> Enter message to commit (empty for default):"
 read message
 
-if [ $message = "" ]
+if [ $message == "" ]
 then
 date=$(date +%Y-%m-%d)
 $message = "Rebuild site at $date"
