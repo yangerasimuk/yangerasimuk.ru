@@ -2,6 +2,7 @@
 layout: post
 title:  "Залитая солнцем зелень"
 date:   2018-09-22 19:00:00 +0300
+description: "Фотки парковой зелени, залитой солнцем"
 ---
 
 <img src="/assets/images/2018/09/2018-09-22_13-32-20_IMG_0500_web.jpg" class="img-fluid mx-auto d-block" alt="Залитая солнцем зелень" />

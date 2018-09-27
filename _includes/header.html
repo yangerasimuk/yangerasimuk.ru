@@ -10,6 +10,15 @@
 				{% endif %}					
 				</div>
 			</div>
+			<div class="col col-auto col-sm-auto col-md-auto col-xl-auto col-lg-auto">
+				<div class="home-link">
+				{% if page.url == "/about.html" %}
+					<span>О</span>
+				{% else %}
+					<a  href="{{ "/about.html" | relative_url }}">О</a>
+				{% endif %}					
+				</div>
+			</div>
 		</div>
 	</div>
 </header>

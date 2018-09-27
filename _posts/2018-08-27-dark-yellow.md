@@ -2,6 +2,7 @@
 layout: post
 title:  "Тёмно-жёлтый"
 date:   2018-08-27 23:05:00 +0300
+description: "Фото вечернего, темно-жёлтого мира"
 ---
 
 <img src="/assets/images/2018/08/2018-08-25_21-00-57_IMG_0246_web.jpg" class="img-fluid mx-auto d-block" alt="Тёмно-жёлтый" />
