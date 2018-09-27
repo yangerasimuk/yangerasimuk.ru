@@ -13,7 +13,7 @@ description: "О сайте yangerasimuk.ru: автор, обратная свя
 <br />
 <br />
 #### Благодарности
-Сайт сгенерирован при помощи [Jekyll](https://jekyllrb.com), свертан на [Bootstrap](https://getbootstrap.com) и хостится на [GitHub Pages](https://pages.github.com).
+Сайт сгенерирован при помощи [Jekyll](https://jekyllrb.com), свертан на [Bootstrap](https://getbootstrap.com) и размещается на [GitHub Pages](https://pages.github.com).
 <br />
 <br />
 gl hf ;)
