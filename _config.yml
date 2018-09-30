@@ -29,6 +29,7 @@ paginate_path: page/:num"
 destination: docs
 # Integration
 yandex_verification: d8be58cfab9dd6e8 
+google_verification: cKLcpID_CCUlPELZlqetR4iISzdZMaIPu0yvb38s3uQ
 
 #theme: minima
 #bootstrap:
