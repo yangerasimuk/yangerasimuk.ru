@@ -18,7 +18,7 @@ bundle exec htmlproofer ./docs
 echo "> git add ."
 git add .
 
-echo "> Enter message to commit (empty for default):"
+echo "> Enter message to commit (no quotes, empty for default):"
 read message
 
 if [ -z "${message// }" ]
