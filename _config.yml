@@ -1,7 +1,7 @@
 title: <yangerasimuk.ru/>
 email: yan.gerasimuk@yandex.ru
 author: Ян Гeрaсимук
-copyright: "&copy; 2018 Ян Гeрaсимук"
+copyright: "&copy; 2018,2019 Ян Гeрaсимук"
 description: > # this means to ignore newlines until "baseurl:"
   Заметки ни о чём :)
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -16,11 +16,11 @@ exclude:
   - make.sh
   - Gemfile
   - Gemfile.lock
-  - README.md 
+  - README.md
   - .DS_Store
   - .nojekyll
   - .gitignore
-  
+
 sass:
     sass_dir: _sass
     style: compressed
@@ -28,7 +28,7 @@ paginate: 10
 paginate_path: page/:num"
 destination: docs
 # Integration
-yandex_verification: d8be58cfab9dd6e8 
+yandex_verification: d8be58cfab9dd6e8
 google_verification: cKLcpID_CCUlPELZlqetR4iISzdZMaIPu0yvb38s3uQ
 
 #theme: minima
