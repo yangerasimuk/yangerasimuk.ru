@@ -18,7 +18,7 @@ bundle exec htmlproofer ./docs
 echo "> git add ."
 git add .
 
-echo "> Enter message to commit (empty for default):"
+echo "> Enter message to commit (no quotes, empty for default):"
 read message
 
 if [ -z "${message// }" ]
@@ -30,8 +30,10 @@ fi
 echo "> git commit -m $message"
 git commit -m "$message"
 
-echo "> git push origin"
-git push --force origin
+#echo "> git push origin"
+#git push --force origin
+echo "> git push"
+git push
 
 echo "> git merge -s ours master"
 git merge -s ours master
