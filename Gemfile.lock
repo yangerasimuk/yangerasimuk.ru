@@ -283,6 +283,7 @@ DEPENDENCIES
   jekyll (~> 3.7.3)
   jekyll-assets
   jekyll-feed (~> 0.10.0)
+  jekyll-paginate
   jekyll-sitemap (~> 1.2.0)
   tzinfo-data
 
