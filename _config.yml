@@ -25,7 +25,7 @@ sass:
     sass_dir: _sass
     style: compressed
 paginate: 10
-paginate_path: page/:num"
+paginate_path: "/page/:num"
 destination: docs
 # Integration
 yandex_verification: d8be58cfab9dd6e8
