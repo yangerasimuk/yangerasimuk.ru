@@ -20,17 +20,12 @@ exclude:
   - .DS_Store
   - .nojekyll
   - .gitignore
-
 sass:
     sass_dir: _sass
     style: compressed
-paginate: 5
+paginate: 10
 paginate_path: "/page/:num"
 destination: docs
 # Integration
 yandex_verification: d8be58cfab9dd6e8
 google_verification: cKLcpID_CCUlPELZlqetR4iISzdZMaIPu0yvb38s3uQ
-
-#theme: minima
-#bootstrap:
- # assets: true
