@@ -24,7 +24,7 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.10.0"
    gem "jekyll-sitemap", "~> 1.2.0"
    gem "html-proofer", "~> 3.9.2"
-   gem "bootstrap", "~> 4.1.3"
+   gem "bootstrap", "~> 4.3.1"
    gem "jekyll-assets"
    gem "jekyll-paginate"
 end
