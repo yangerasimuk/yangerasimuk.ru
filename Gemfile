@@ -25,10 +25,11 @@ group :jekyll_plugins do
    gem "jekyll-sitemap", "~> 1.2.0"
    gem "html-proofer", "~> 3.9.2"
    gem "bootstrap", "~> 4.1.3"
-   gem "autoprefixer-rails"
    gem "jekyll-assets"
    gem "jekyll-paginate"
 end
+
+#gem "autoprefixer-rails"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
